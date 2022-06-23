@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
 </head>
 <body>
     <main>
+        <div class="turn-display">
+            <h1 class="display-text">Player X's turn</h1>
+        </div>
         <div class="game-board">
-            <div class="cell" id="cell-0"></div>
-            <div class="cell" id="cell-1"></div>
-            <div class="cell" id="cell-2"></div>
-            <div class="cell" id="cell-3"></div>
-            <div class="cell" id="cell-4"></div>
-            <div class="cell" id="cell-5"></div>
-            <div class="cell" id="cell-6"></div>
-            <div class="cell" id="cell-7"></div>
-            <div class="cell" id="cell-8"></div>
+            <div class="cell left top" id="0"></div>
+            <div class="cell top" id="1"></div>
+            <div class="cell right top" id="2"></div>
+            <div class="cell left" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell right" id="5"></div>
+            <div class="cell left bottom" id="6"></div>
+            <div class="cell bottom" id="7"></div>
+            <div class="cell right bottom" id="8"></div>
 
         </div>
+        <button class="restart-btn">Restart</button>
     </main>
 
     <script src="script.js" defer></script>  

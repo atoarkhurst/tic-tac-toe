@@ -5,16 +5,56 @@
 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+.turn-display{
+   margin-top: 80px;
 }
 
+.turn-display h1{
+
+}
 .game-board{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
 }
 
 .cell{
-    border: 1px black solid;
+    border: 5px #e7e5e4 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    border-left: 0;
+    
+}
+
+.right{
+    border-right: 0;
+    
+}
+
+.top{
+    border-top: 0;
+}
+
+.bottom{
+    border-bottom: 0;
+}
+
+.restart-btn{
+    padding: 15px;
+    width: 150px;
+    background-color: white;
+    border: 4px #e7e5e4 solid;
+    font-size: 20px;
 }
